@@ -1,248 +1,334 @@
-<section class="form-container">
-    <form class="">
-        <h1 class="form-header">CDOE Admission</h1>
-        <div class="form">
-            <div class="form-item form-item1">
-                <label for="firstname">First Name</label>
-                <input id="firstname" type="text" name="firstname"/>
-            </div>
-            
-            <div class="form-item form-item1">
-                <label for="lastname">Last Name</label>
-                <input for="lastname" type="text" name="lastname"/>
-            </div>
-            
-            <div class="form-item form-item2">
-                <label for="phonenumber">Phone Number</label>
-                <input id="phonenumber" type="tel"name="phonenumber"/>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-            <div class="form-item form-item2">
-                <label for="email">Email</label>
-                <input id="email" type="email" name="email"/>
+<div class="wrapper">
+    <div class="header">
+      <span class="active"></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="bodies">
+      <div class="form-body is-showing">
+        <div class="title">Application Information</div>
+        <form>
+          <input type="text" placeholder="Program Preference">
+          <input type="email" placeholder="Course Preference">
+		  <select>
+            <option selected="">Title</option>
+            <option value="">MBA</option>
+            <option value="">BBA</option>
+          </select>
+          <input type="email" placeholder="First Name">
+		  <input type="text" placeholder="Last Name">
+          <input type="email" placeholder="Date of Birth">
+		  <select>
+            <option selected="">Choose Gender</option>
+            <option value="">Male</option>
+            <option value="">Female</option>
+            <option value="">Transgender</option>
+          </select>
+          <select>
+            <option selected="">Choose Blood Group</option>
+            <option value="">o+</option>
+            <option value="">o-</option>
+            <option value="">B+</option>
+          </select>
+		  <select>
+            <option selected="">Choose Caste</option>
+            <option value="">Caste1</option>
+            <option value="">Caste2</option>
+            <option value="">Caste3</option>
+          </select>
+          <select>
+            <option selected="">Choose Religion</option>
+            <option value="">Hindu</option>
+            <option value="">Christian</option>
+            <option value="">Muslim</option>
+          </select>
+		  <select>
+            <option selected="">Choose Mother Tongue</option>
+            <option value="">Tamil</option>
+            <option value="">English</option>
+            <option value="">Telugu</option>
+          </select>
+          <input type="email" placeholder="Alt Email">
+		  <input type="text" placeholder="Alt Phone no">
+          
+          <div class="text-center">
+            <div class="button">Next</div>
+          </div>
+        </form>
+      </div>
+      <div class="form-body">
+        <div class="title">Personal Information</div>
+        <form>
+          <input type="tel" placeholder="Father Name">
+		  <input type="tel" placeholder="Father's email">
+		  <input type="tel" placeholder="Father's phonenumber">
+          <select>
+            <option selected="">Choose Occupation</option>
+            <option value="">Teacher</option>
+            <option value="">Police</option>
+            <option value="">Army</option>
+          </select>
+		  <input type="tel" placeholder="Mother Name">
+		  <input type="tel" placeholder="Mother's email">
+		  <input type="tel" placeholder="Mother's phonenumber">
+          <select>
+            <option selected="">Choose Occupation</option>
+            <option value="">Teacher</option>
+            <option value="">Police</option>
+            <option value="">Army</option>
+          </select>
+		  <input type="tel" placeholder="Country">
+		  <input type="tel" placeholder="State">
+		  <input type="tel" placeholder="City">
+		  <input type="tel" placeholder="District">
+		  <input type="tel" placeholder="Pincode">
+		  <input type="tel" placeholder="Address">
+          <div class="text-center">
+            <div class="button">Next</div>
+          </div>
+        </form>
+      </div>
+      <!-- <div class="form-body">
+        <div class="title">STEP 3</div>
+        <form>
+          <div class="text-center">
+            <div class="description">
+              Check your email for your query results.
             </div>
-
-            <div class="form-item form-item3">
-                <label for="time frame">Course</label>
-                <select name="time frame">
-                    <option value="week-1">1 </option>
-                    <option value="week-2">2 </option>
-                    <option value="week-3">3 </option>
-                </select>
-            </div>
-
-            <div class="form-item form-item3">
-                <label for="has website">Are you willing to join this course></label>
-                <select name="has website">
-                    <option value="form-no">No</option>
-                    <option value="form-yes">Yes</option>
-                </select>
-            </div>
-            
-            <!-- <div class="textarea-div form-item4">
-                <label for="message">Job Description</label>
-                <textarea id="message" type="text" name="message" placeholder="What would you have me do?"></textarea>
-            </div> -->
-            <div class="btn-container">
-                <input id="submit" class="btn btn-glow form-btn" type="submit" name="submit" value="Register Now"/>
-            </div>
-        </div>
-    </form>
-</section>
-
-<style>
-    html {
-  background: rgb(12,12,12);
-  font-family: sans-serif;
+            <div class="button">Submit</div>
+          </div>
+        </form>
+      </div> -->
+    </div>
+  </div>
+  <style>
+html {
+  background: #336699;
+  min-height: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
-*, ::after, ::before {
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #336699;
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.description {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+select {
+  padding: 10px 20px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
   box-sizing: border-box;
+  outline: none;
 }
-
-@keyframes slide-up2 {
-	0% {
-		transform: translateY(.5em);
-		opacity: 0;
-	}
-	100%{
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
-
-@keyframes glow-load {
-	0% {
-		box-shadow: none;
-	}
-	100%{
-		box-shadow:
-			0px 0px 50px #f0860c;
-	}
-}
-
-@keyframes continuous-glow {
-	0% {
-	box-shadow: 0 0 5px rgba(255, 157, 9, 0.39), inset 0 0 5px rgba(255, 153, 0, 0.356), 0 2px 0 #000;
-	}	
-	100% {
-	box-shadow: 0 0 20px rgba(255, 153, 0, 0.6), inset 0 0 10px rgba(255, 145, 0, 0.4), 0 2px 0 #000;
-	}
-}
-
-@keyframes blur-load {
-	0% {
-		opacity: 0;
-		filter:blur(0.2em);
-	}
-	100%{
-		opacity: 1;
-		filter:blur(0);
-	}
-}
-
-.form-container {
-  margin: auto;
-  width: 90%;
-}
-
-.form-item,
-.textarea-div {
-	opacity: 0;
-}
-
-.form-item1 {
-	animation: .2s cubic-bezier(0.47, 0, 0.745, 0.715) .3s 1 slide-up2 ;
-  animation-fill-mode: forwards;
-}
-
-.form-item2 {
-	animation: .2s cubic-bezier(0.47, 0, 0.745, 0.715) .4s 1 slide-up2 ;
-  animation-fill-mode: forwards;
-}
-
-.form-item3 {
-	animation: .2s cubic-bezier(0.47, 0, 0.745, 0.715) .5s 1 slide-up2 ;
-  animation-fill-mode: forwards;
-}
-
-.form-item4 {
-	animation: .2s cubic-bezier(0.47, 0, 0.745, 0.715) .6s 1 slide-up2 ;
-  animation-fill-mode: forwards;
-}
-
-form {
-	background-color: rgb(12, 12, 12);
-	border-radius: 1.25em;
-	padding: 1.5em;
-	animation: 1s cubic-bezier(0.47, 0, 0.745, 0.715) .7s 1 glow-load;
-	animation-fill-mode: forwards;
-}
-
-form label {
-	color: rgb(191, 191, 191);
-}
-
-option, select, input, .textarea-div textarea {
-  background: #1b1a1a;
-  color: rgb(255, 229, 195);
-}
-
-.form-header {
-	text-align: center;
-	font-size: 28px;
-	padding: 0;
-	margin-bottom: 1.25em;
-	color: #f0860c	;
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+select:focus {
+  border-color: #336699;
 }
 
 label {
-	display: block;
-	margin-bottom: 0.35em;
-	margin-top: 0.35em;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 18px;
+  color: #666;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  cursor: pointer;
+}
+label:first-child {
+  margin-bottom: 0;
+  border-bottom: none;
 }
 
-input:not(.btn), select {
-	padding: 0.625em 1em;
-	width: 100%;
-	outline: 0;
-	margin-bottom: 1.25em;
-	border-radius: 1.25em;
-	border: 0;
+.button {
+  padding: 10px 20px;
+  border-radius: 3px;
+  background: #336699;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+.button:hover {
+  background: #2d5986;
 }
 
-.textarea-div {
-	width: 100%;
+.boom-btn::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+  animation: boom 500ms ease-in-out forwards;
 }
 
-textarea {
-	padding: 10px;
-	width: 100%;
-	outline: 0;
-	margin-bottom: 20px;
-	border-radius: 20px;
-	border: 0;
-	font-size: 14px;
-	height: 100px;
-}
-
-.btn-container {
-  margin: auto;
-  padding-bottom: 1em;
-}
-
-.form-btn { 
-	background: rgb(12, 12, 12) ;
-	border: none ;
-	margin-top: 1em ;
-  font-size: 20px;
-  padding: .5em;
-}
-
-.btn-glow {
-	animation: .5s ease-out 0s 1 blur-load;
-	border-radius: 2em ;
-	color: white ;
-	transition:.4s ;
-}
-
-.btn-glow:hover {
-	box-shadow: 0px 0px 10px #f0860c;
-}
-
-.form-btn:hover { 
-	background: #f0860c ;
-}
-
-.form-container input:focus,
-.form-container select:focus,
-.form-container textarea:focus  {
-	animation: continuous-glow 800ms ease-out infinite alternate;
-	box-shadow: 0 0 5px #f0860c, inset 0 0 5px #f0860c, 0 2px 0 #000;
-	color: rgb(255, 229, 195);
-}
-
-@media only screen and (min-width: 35.8em) {
-	.form {
-		display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-	}
-	
-	.form-item {
-		width: 45%;
-	}
-
-	.form-container {
-		padding: 5em 0;
-    width: 80%;
+@keyframes boom {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  70% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
   }
 }
+.text-center {
+  text-align: center;
+}
 
-@media only screen and (min-width: 60.625em) {
-  .form-container {
-		padding: 8em 0;
-    width: 70%;
+.wrapper {
+  max-width: 600px;
+  margin: 50px auto;
+  transition: transform 300ms ease-in-out;
+}
+
+.header {
+  height: 45px;
+  background: white;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.header span {
+  display: block;
+  height: 12px;
+  width: 12px;
+  margin: 5px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.header span.active {
+  background: rgba(0, 0, 0, 0.4);
+  background: #e05038;
+}
+
+.bodies {
+  position: relative;
+  perspective: 1000px;
+}
+
+.form-body {
+  background: white;
+  padding: 40px 100px;
+  box-shadow: 0px 50px 30px -30px rgba(0, 0, 0, 0.3);
+  margin-bottom: 50px;
+  position: absolute;
+  top: 0;
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+  opacity: 1;
+  transform-origin: left top;
+}
+.form-body.is-showing {
+  display: block;
+}
+
+.animate-out {
+  animation: out 600ms ease-in-out forwards;
+}
+
+@keyframes out {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 1;
+  }
+  60% {
+    transform: rotate(60deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(800px) rotate(10deg);
+    opacity: 0;
+  }
+}
+.animate-in {
+  animation: in 500ms ease-in-out forwards;
+  display: block;
+}
+
+@keyframes in {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
   }
 }
 </style>
+<script>
+$(document).ready(function(){
+  $('.button').on('click', function(){
+    var $step = $(this).parents('.form-body');
+
+    // To give button an animation class
+    $(this).addClass('boom-btn');
+
+    $step.addClass('animate-out');
+
+    // Removing is-showing class from the current form
+    setTimeout(function(){
+      $step.removeClass('animate-out is-showing').next().addClass('animate-in');
+      $step.parents('.wrapper').find('.header span.active').removeClass('active').next().addClass('active');
+    },600);
+
+    // Adding is-showing class to the next form
+    setTimeout(function(){
+      $step.next().removeClass('animate-in').addClass('is-showing');
+    },1200);
+  });
+});
+
+</script>
+</body>
+</html>
